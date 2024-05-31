@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecodemy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            color: #333333;
+        }
+        .content p {
+            color: #666666;
+        }
+        .activation-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+        .footer {
+            padding: 10px 0;
+            text-align: center;
+            color: #999999;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Welcome to Ecodemy!</h1>
+        </div>
+        <div class="content">
+            <h1>Hello, <%= name %>!</h1>
+            <p>Thank you for registering with Ecodemy. We're excited to have you on board!</p>
+            <p>Please use the following activation code to activate your account:</p>
+            <div class="activation-code"><%= activationCode %></div>
+            <p>The code will expire in 5 min.</p>
+            <p>If you have any questions, feel free to <a href="mailto:support@becodemy.com">contact us</a>.</p>
+            <p>Best regards,<br>The Ecodemy Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Ecodemy. All rights reserved.</p>
+            <p><a href="https://www.Ecodemy.com">Visit our website</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
 
-export const catchAsyncErrors = (theFunc:any)=>(res:Response,req:Request,next:NextFunction)=>{
+export const catchAsyncErrors = (theFunc:any)=>(req: Request, res: Response, next: NextFunction)=>{
     Promise.resolve(theFunc(req,res,next)).catch(next);
 }
